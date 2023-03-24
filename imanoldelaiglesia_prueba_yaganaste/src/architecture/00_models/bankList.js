@@ -1,3 +1,22 @@
+/* Extracción de lista mediante @get simple sin autenticación. Con fetch. */
+export default function fetchBankList() {
+	return fetch('https://dev.obtenmas.com/catom/api/challenge/banks')
+	  .then(response => {
+		if (!response.ok) {
+		  throw new Error('Error al extraer la lista');
+		}
+		return response.json();
+	  })
+	  .catch(error => {
+		console.error(error);
+		throw new Error('Error al extraer la lista');
+	  });
+  }
+
+/* 
+Así estaba antes de la tarea 3 que, según entiendo, requiere extraer
+la información mediante "get":
+
 const bankList = [
 	{
 	  "description": "Banco Paga Todo es Para Todos",
@@ -31,4 +50,4 @@ const bankList = [
 	}
   ]
   export default bankList;
-  
+*/
