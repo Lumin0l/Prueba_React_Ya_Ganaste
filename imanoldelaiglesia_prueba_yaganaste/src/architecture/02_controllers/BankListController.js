@@ -7,9 +7,9 @@ lógicas e interacciones entre los elementos y 'views'
 proceso de interacción que sucede al hacer clic en el enlace que
 no lleva a ningún lado */
 function BankListController() {
-	function handleBankLinkClick(event, url) {
+	function handleBankLinkClick(event) {
 	  event.preventDefault();
-	  alert(`No hay nada en este link ${url}`);
+	  alert('Esto no es un enlace');
 	}
   
 	return {

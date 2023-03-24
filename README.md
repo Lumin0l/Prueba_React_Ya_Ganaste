@@ -21,8 +21,16 @@ Tarea 2: Architecture
 
 	Una vez establecido el modelo, he pasado a diferenciar los elementos que entrarían en cada categoría.
 
-	En el caso de este proyecto tan pequeño, el Modelo consistiría en la capa de datos que gestiona la información de los Bancos, la Vista se encargaría de la capa de presentación que muestra la lista, y el Controlador sería el mediador que interactúa con el Modelo y la Vista.
+	En el caso de este proyecto tan pequeño, el Modelo consistiría en la capa de datos que gestiona la información de los Bancos (la lista aportada por el pdf), la Vista se encargaría de la capa de presentación que muestra la lista (App, teniendo en cuenta que el objetivo es la visualización de las listas), y el Controlador sería el mediador que interactúa con el Modelo y la Vista.
 
-	
+	He estructurado las funciones en directorios separados dentro de una carpeta architectures.
+
+	Para que haya algo dentro de "controllers" también he decidido crear una pequeña funcionalidad que indica "esto no es un enlace" mediante un mensaje al hacer clic en el nombre del banco en cuestión.
+
+	Una vez establecido esto, paso a la siguiente tarea.
+
+Tarea 3: Network Request
+
+
 
 
